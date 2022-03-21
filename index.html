@@ -3,177 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>百度</title>
-        
-        <style>
-            *{
-    color:black; 
-    margin:0px;
-    padding: 0px;
-}
-body{
-    margin: 0;
-}
-.mainbody{
-    width:100%;
-    height:100%;
-   /* display: flex;*/
-    flex-direction: column;
-    background-color:#FFFFFF;
-    margin:0px;
-}
-
-.t1{
-    width: 100%;
-    height: 45px;
-    border-top:2px solid #FA7D3C;
-    border-bottom: 1px solid #E1E1E1;
-    margin-top: 0px;  
-    background-color: #FFFFFF;
-    display: inline-block;
-    flex-grow: 1;
- }
-
- .Ne6nSd {
-    display: flex;
-    align-items: center;
-    padding: 6px;
-}
-.n1xJcf {
-    height: 60px;
-}
-.o3j99 {
-    flex-shrink: 0;
-    box-sizing: border-box;
-    /*边框长度包括在计算的长度里*/
-}
-
- .ti-left{
-     float:left;
-     margin-left: 600px;
-     width: 100%;
-     height: auto;
- }
- .t1-right1{
-    float:right;
-    box-sizing: border-box;
-    height: 48px;
-    line-height: normal;
-    padding: 0 4px;
-    padding-left: 30px;
-    flex: 0 0 auto;
-    vertical-align: middle;
-    white-space: nowrap;
-    -webkit-align-items: center;
-    align-items: center;
-    display: flex;
-    /* margin-top: 16px; */
-}
-.t1-left2{
-    width: 100%;
-    height: 140px;
-}
-.input1{
-    width: 584px;
-    height: 46px;
-    padding: 1px 44px 1px 52px;
-    background: #FFFFFF;
-    bborder:1px solid rgb(86, 81, 81);
-    margin-top: 0%;
-    margin-left: 50%;
-    border-radius: 20px;
-}
-.li1{
-    width: 26px;
-    margin-left: 1300px;
-    background-size: 26px 19px; 
-}
-.li2{
-    width: 24px;
-    margin-left: 23px;
-    background-size: 1px 19px; 
-}
-.li1,.li2{
-    float:left;     
-    list-style-type: none;
-    text-indent: 20px/*字体和图片之间的距离*/;
-    font-size :13px; 
-    margin-top: 16px;
-    /* 字体大小 */
-    /* 设置点击字体时颜色发生改变 */
-
-}
-.li3{
-    width: 80px;
-    margin-left: 1000px;
-    background-size: 80px 19px; 
-    font-size: 15px;
-}
-.li3:hover{
-    color: #A2A2A2;
-}
-
-.div2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 201.6px;
-    width:100%;
-    flex-shrink: 0;
-    box-sizing: border-box;
-}
-.div2-image{
-    width: 270px;
-    height: 92px;
-    margin-top: 53.6px;
-    flex-direction: column;
-    position: absolute;
-    align-items: center;
-    object-position: center bottom;
- }
-.div3{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 120px;
-    width: 873.6px;
-    flex-shrink: 0;
-    box-sizing: border-box;
-}
-.div4{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 290.8px;
-    width: 913.6px;
-    flex-shrink: 0;
-    box-sizing: border-box;
-}
-
-.div5{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 49.2px;
-    width: 873.6px;
-    flex-shrink: 0;
-    box-sizing: border-box;
-}
-        </style>   
+        <title>谷歌</title>
+        <link rel="stylesheet" type="text/css" href="css/baidu.css">
     </head>
 
     <body>
         <div class = "mainbody">
-            <!-- 主盒子，整个页面 -->
             <div class = "Ne6nSd n1xJcf o3j99">
-                <!-- 第一个页面上面的盒子 -->
-                <div class="t1-left">
-
-                </div>
                 <div class = t1-right1>
                     <ul>
-                        <a href="https://www.google.cn/imghp?hl=zh-CN&tab=ri&ogbl"><li class = "li1">图片</li></a>
-                        <a href = "https://www.google.com.hk/advanced_search"><li class = "li2">高级搜索</li></a>
+                        <a href="search_photo.html"><li class = "li1">图片</li></a>
+                        <a href = "search_highlevel.html"><li class = "li2">高级搜索</li></a>
                     </ul>
                 </div>     
             </div>
@@ -182,28 +22,22 @@ body{
             <div class = "div2-image">
                 <img src="imagesh/google.png">
             </div>
-        </div> 
-        
+        </div>
         <div class="div3">
             <!-- 第三个页面尾部的盒子 -->
-            <div class = "t1-left2">
-                <form action="https://www.baidu.com/baidu" target = "_blank">                       <!-- 如果想要进入百度并且搜索对话框里面的内容，input里面的name必须是word -->
-                    <input id="input"class = "input1" name=word type="search" autocomplete="off" spellcheck="false" role="combobox" aria-live="polite" placeholder="在 Google 上搜索，或者输入一个网址">
+            <div class = "t3-left2">
+                <form action="https://www.baidu.com/baidu" target = "_blank">                       
+                    <!-- 如果想要进入百度并且搜索对话框里面的内容，input里面的name必须是word -->
+                    <input class = "input1" name=word type="search" placeholder="在 Google 上搜索，或者输入一个网址">
                 </form>
             </div>
         </div>
-
-
         <div class="div4">
             <div class = li3>
-                运气不错
+               <p>运气不错</p> 
             </div>
         </div>
-
         <div class="div5">
-
         </div>
-
-
     </body>
 </html>
